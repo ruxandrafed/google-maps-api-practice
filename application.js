@@ -57,7 +57,9 @@ $(function() {
 
   }
 
-
   get500pxData(vancouver.lat, vancouver.lng);
 
 })
+
+
+// http://stackoverflow.com/questions/4338490/google-map-event-bounds-changed-triggered-multiple-times-when-dragging

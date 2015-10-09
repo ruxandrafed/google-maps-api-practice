@@ -23,6 +23,13 @@
       });
     }
 
+    var oldZoom = null;
+    var oldCenter = null;
+    google.maps.event.addListenerOnce(map, "zoom_changed", function() { oldZoom = map.getZoom(); });
+    google.maps.event.addListenerOnce(map, "center_changed", function() { oldCenter = map.getCenter(); });
+
+    var map_center = map.getCenter();
+
     </script>
     <script src="http://500px.github.io/500px-js-sdk/500px.js"></script>
     <script async defer
